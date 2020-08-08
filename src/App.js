@@ -9,8 +9,10 @@ const Pokemones = (props) => {
     </div>
   )
 }
+
 function App() {
   const [list, setList] = useState([])
+
   const getPokemones = () => {
     axios.get('https://pokeapi.co/api/v2/pokemon')
       .then(function (response) {
